@@ -14,7 +14,7 @@ class CardsView extends StatelessWidget {
       width: double.infinity,
       height: 460.0,
       child: PageView(
-        controller: PageController(viewportFraction: 0.8),
+        controller: PageController(viewportFraction: 0.80),
         // children: <Widget>[
         //   _Card(),
         //   _Card(),
@@ -39,12 +39,12 @@ class _Card extends StatelessWidget{
       child: Stack(
         children: <Widget>[
           Row(
-            children: <Widget>[
-              _PrimeraDescripcion(prod),
-              SizedBox(width: 55.0,),
-              _TarjetaDescripcion(prod)
-            ],
-          ),
+              children: <Widget>[
+                _PrimeraDescripcion(prod),
+                SizedBox(width: 50.0,),
+                _TarjetaDescripcion(prod)
+              ],
+            ),
 
           Positioned(
             top: 90,
